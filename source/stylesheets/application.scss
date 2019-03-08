@@ -20,3 +20,79 @@
 
 // Page Styles
 @import "pages/home";
+
+
+body {
+	max-height: 100vh;
+	overflow: hidden;
+	background-color: $green-lightest;
+}
+
+nav {
+	display: inline-block;
+	vertical-align: left;
+	padding-top: 30px;
+	padding-left: 40px;
+	
+	img {
+		width: 101px;
+	}
+}
+
+.hero {
+	@include vertical-center;
+	z-index: 1;
+
+	.text-block {
+		display: block;
+		padding-left: 60px;
+		width: 60%;
+		z-index: 1 !important;
+
+	}
+
+	.line {
+		width: 200px;
+		border-bottom: 8px solid $green-dark;
+	    position: absolute;
+	    border-radius: 100px;
+	}
+}
+
+.left-play {
+	position: absolute;
+	left: -10%;
+	bottom: -40%;
+	width: 508px;
+	height: 573px;
+}
+
+.right-play {
+	position: absolute;
+	right: -10%;
+	top: 10%;
+	width: 777.94px;
+	height: 877.35px;
+}
+
+footer {
+	position: absolute;
+	bottom: 150px;
+	right: 0;
+
+	&:before {
+		content: "";
+		@include triangle(1100px 150px, white transparent, down-right);
+	}
+
+	.footer-inner{
+		position: absolute;
+		bottom: -120px;
+		right: 30px;
+
+		img {
+			width: 50px;
+			padding: 5px;
+		}
+	}
+}

@@ -15,43 +15,48 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
+
+
+h1 {
+  font-style: normal;
+  font-weight: $heavy;
+  font-size: $s-huge;
+  color: $black-base;
+  line-height: 1.2em;
+  padding-bottom: 50px;
+}
+
+p {
+  font-weight: 300;
+  font-style: normal;
+  font-size: $s-bigger;
+  color: $black-base;
+  line-height: 1.5em;
+  padding-top: 50px;
+}
+
+
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-style: normal;
-  font-weight: $bold;
+  font-weight: $heavy;
   @include font-type($primary-sans-serif, normal, $regular);
   @include rem(margin-bottom, 12px);
   color: $black-base;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  letter-spacing: 1px;
   line-height: 1.1;
-
-  @include media($tablet){ letter-spacing: 2px; font-weight: $light; }
 }
 
-h1 { font-size: $font-size-base * 1.75; @include media($tablet){ font-size: $font-size-base * 4; } }
 h2 { font-size: $font-size-base * 1.50; @include media($tablet){ font-size: $font-size-base * 2.75; } }
 h3 { font-size: $font-size-base * 1.45; @include media($tablet){ font-size: $font-size-base * 2.50; } }
 h4 { font-size: $font-size-base * 1.25; @include media($tablet){ font-size: $font-size-base * 1.75; } }
 h5 { font-size: $font-size-base * 1.00; @include media($tablet){ font-size: $font-size-base * 1.25; } }
 h6 { font-size: $font-size-base - 2.00; @include media($tablet){ font-size: $font-size-base * 1.00; } }
 
-p {
-  font-weight: normal;
-  font-style: normal;
-  @include font-type($primary-sans-serif, normal, normal);
-  @include s-small;
-  @include rem(margin-bottom, 12px);
-  line-height: $base-line-height;
-  color: $black-base;
-
-  &:last-child { @include rem(margin-bottom, 0); }
-}
 
 li,
 dd{
