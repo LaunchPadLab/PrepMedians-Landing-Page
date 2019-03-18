@@ -97,7 +97,13 @@ nav {
 
 	#mc_embed_signup {
 		display: inline;
+	}
 
+	#mce-EMAIL:active,
+	#mce-EMAIL:hover,
+	#mce-EMAIL:focus  {
+		border-color: $green-dark;
+		outline: transparent dotted 1px;
 	}
 
 	#mce-EMAIL {
@@ -114,6 +120,14 @@ nav {
 		@include media($tablet) {
 			width: 60%;
 		}
+	}
+
+	#mc-embedded-subscribe:active,
+	#mc-embedded-subscribe:hover,
+	#mc-embedded-subscribe:focus {
+		background-color: $green-dark;
+		border-color: $green-dark;
+		outline: transparent dotted 1px;
 	}
 
 	#mc-embedded-subscribe {
