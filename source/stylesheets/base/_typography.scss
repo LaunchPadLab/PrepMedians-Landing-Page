@@ -20,10 +20,14 @@ body {
 h1 {
   font-style: normal;
   font-weight: $heavy;
-  font-size: $s-huge;
+  font-size: $s-large;
   color: $black-base;
   line-height: 1.2em;
   padding-bottom: 50px;
+
+  @include media($tablet) {
+    font-size: $s-huge;
+  }
 }
 
 p {

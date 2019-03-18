@@ -32,10 +32,10 @@ nav {
 	display: inline-block;
 	vertical-align: left;
 	padding-top: 30px;
-	padding-left: 40px;
+	padding-left: 60px;
 	
 	img {
-		width: 101px;
+		width: 115px;
 	}
 }
 
@@ -46,9 +46,16 @@ nav {
 	.text-block {
 		display: block;
 		padding-left: 60px;
-		width: 60%;
+		width: 90%;
 		z-index: 1 !important;
 
+		@include media($tablet) {
+			width:80%;
+		}
+
+		@include media($desktop) {
+			width:75%;
+		}
 	}
 
 	.line {
@@ -56,6 +63,21 @@ nav {
 		border-bottom: 8px solid $green-dark;
 	    position: absolute;
 	    border-radius: 100px;
+	}
+
+	.form {
+		display: block;
+		padding-left: 60px;
+		width: 90%;
+		z-index: 1 !important;
+
+		@include media($tablet) {
+			width:80%;
+		}
+
+		@include media($desktop) {
+			width:75%;
+		}
 	}
 }
 
