@@ -16,27 +16,34 @@ body {
 }
 
 
-
 h1 {
   font-style: normal;
   font-weight: $heavy;
   font-size: $s-large;
   color: $black-base;
-  line-height: 1.2em;
-  padding-bottom: 50px;
+  line-height: 1.3em;
+  padding-bottom: 15px;
 
   @include media($tablet) {
     font-size: $s-huge;
+    padding-bottom: 30px;
   }
 }
 
 p {
   font-weight: 300;
   font-style: normal;
-  font-size: $s-bigger;
+  font-size: $s-small;
   color: $black-base;
   line-height: 1.5em;
-  padding-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 15px;
+
+  @include media($tablet) {
+    font-size: $s-big;
+    padding-bottom: 30px;
+    padding-top: 60px;
+  }
 }
 
 

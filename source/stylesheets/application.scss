@@ -32,10 +32,18 @@ nav {
 	display: inline-block;
 	vertical-align: left;
 	padding-top: 30px;
-	padding-left: 60px;
+	padding-left: 20px;
+
+	@include media($tablet) {
+		padding-left: 60px;
+	}
 	
 	img {
-		width: 115px;
+		width: 80px;
+
+		@include media($tablet) {
+			width: 115px;
+		}
 	}
 }
 
@@ -45,12 +53,13 @@ nav {
 
 	.text-block {
 		display: block;
-		padding-left: 60px;
-		width: 90%;
+		padding-left: 20px;
+		width: 95%;
 		z-index: 1 !important;
 
 		@include media($tablet) {
 			width:80%;
+			padding-left: 60px;
 		}
 
 		@include media($desktop) {
@@ -60,61 +69,142 @@ nav {
 
 	.line {
 		width: 200px;
-		border-bottom: 8px solid $green-dark;
+		border-bottom: 5px solid $green-dark;
 	    position: absolute;
 	    border-radius: 100px;
+	    border-top: 1px solid $green-dark;
+
+	    @include media($tablet) {
+	    	border-bottom: 7px solid $green-dark;
+	    	border-top: 1px solid $green-dark;
+	    }
 	}
 
 	.form {
-		display: block;
-		padding-left: 60px;
-		width: 90%;
+		padding-left: 20px;
+		width: 95%;
 		z-index: 1 !important;
 
 		@include media($tablet) {
 			width:80%;
+			padding-left: 60px;
 		}
 
 		@include media($desktop) {
 			width:75%;
 		}
 	}
+
+	#mc_embed_signup {
+		display: inline;
+
+	}
+
+	#mce-EMAIL {
+		border-color: $green-base;
+		padding: 16px;
+		font-style: normal;
+		font-weight: $light;
+		font-size: $s-medium;
+		color: $black-base;
+		border-radius: 100px;
+		width: 100%;
+		font-family: $primary-sans-serif;
+
+		@include media($tablet) {
+			width: 60%;
+		}
+	}
+
+	#mc-embedded-subscribe {
+		color: white;
+		background-color: $green-base;
+		padding: 12px 60px;
+		text-transform: uppercase;
+		font-weight: $regular;
+		font-size: $s-medium;
+		border-radius: 100px;
+		border-color: $green-base;
+		font-family: $primary-sans-serif;
+
+	}
 }
 
 .left-play {
 	position: absolute;
-	left: -10%;
-	bottom: -40%;
-	width: 508px;
-	height: 573px;
+	left: -35%;
+	bottom: -25%;
+	width: 304.8px;
+	height: 343.8px;
+
+	@include media($tablet) {
+		width: 508px;
+		height: 573px;
+		left: -10%;
+		bottom: -40%;
+	}	
 }
 
 .right-play {
 	position: absolute;
-	right: -10%;
-	top: 10%;
-	width: 777.94px;
-	height: 877.35px;
+	right: -50%;
+	top: 2%;
+	width: 388.97px;
+	height: 438.675px;
+
+	@include media($tablet) {
+		position: absolute;
+		width: 777.94px;
+		height: 877.35px;
+		right: -10%;
+		top: 10%
+	}	
+
+	@include media($desktop) {
+		position: absolute;
+		width: 777.94px;
+		height: 877.35px;
+		right: -10%;
+		top: 10%
+	}	
 }
 
 footer {
 	position: absolute;
-	bottom: 150px;
+	bottom: 100px;
 	right: 0;
+
+	@include media($tablet) {
+		bottom: 150px;
+		right: 0;
+	}
 
 	&:before {
 		content: "";
-		@include triangle(1100px 150px, white transparent, down-right);
+		@include triangle(1100px 100px, white transparent, down-right);
+
+		@include media($tablet) {
+			content: "";
+			@include triangle(1100px 150px, white transparent, down-right);
+		}
 	}
 
 	.footer-inner{
 		position: absolute;
-		bottom: -120px;
+		bottom: -80px;
 		right: 30px;
 
+		@include media($tablet) {
+			bottom: -120px;
+		}
+
 		img {
-			width: 50px;
-			padding: 5px;
+			width: 38px;
+			padding: 2px;
+
+			@include media($tablet) {
+				width: 60px;
+			}
 		}
 	}
 }
