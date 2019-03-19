@@ -1,0 +1,673 @@
+/* line 4, /Users/analisabernardi/.asdf/installs/ruby/2.6.0/lib/ruby/gems/2.6.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 9, /Users/analisabernardi/.asdf/installs/ruby/2.6.0/lib/ruby/gems/2.6.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* line 6, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/settings/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 16, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/settings/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 19, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/settings/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 22, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/settings/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 25, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/settings/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 29, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/settings/_reset.scss */
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+/* line 35, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/settings/_reset.scss */
+q:before, q:after {
+  content: "";
+  content: none; }
+
+/* line 40, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/settings/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 75, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/settings/mixins/_layout.scss */
+img {
+  width: 100%; }
+
+/* line 92, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/settings/mixins/_layout.scss */
+.horizontal-divider {
+  border-bottom: 1px solid #9B9B9B; }
+
+/* line 4, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 9, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font: 100%/1.618;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 19, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  color: #4A4A4A;
+  line-height: 1.3em;
+  padding-bottom: 20px; }
+  @media screen and (min-width: 45em) {
+    /* line 19, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+    h1 {
+      font-size: 66px;
+      padding-bottom: 30px; } }
+
+/* line 33, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  font-style: italic;
+  color: #4A4A4A;
+  line-height: 1.3em;
+  padding-top: 50px; }
+  @media screen and (min-width: 45em) {
+    /* line 33, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+    h2 {
+      font-size: 24px;
+      padding-top: 60px; } }
+
+/* line 48, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+p {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  color: #4A4A4A;
+  line-height: 1.5em;
+  padding-top: 20px;
+  padding-bottom: 15px; }
+  @media screen and (min-width: 45em) {
+    /* line 48, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+    p {
+      font-size: 18px;
+      padding-bottom: 30px;
+      padding-top: 20px; } }
+
+/* line 66, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 12px;
+  margin-bottom: 0.85714rem;
+  color: #4A4A4A;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.1; }
+
+/* line 81, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+h3 {
+  font-size: 20.3px; }
+  @media screen and (min-width: 45em) {
+    /* line 81, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+    h3 {
+      font-size: 35px; } }
+
+/* line 82, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+h4 {
+  font-size: 17.5px; }
+  @media screen and (min-width: 45em) {
+    /* line 82, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+    h4 {
+      font-size: 24.5px; } }
+
+/* line 83, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+h5 {
+  font-size: 14px; }
+  @media screen and (min-width: 45em) {
+    /* line 83, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+    h5 {
+      font-size: 17.5px; } }
+
+/* line 84, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+h6 {
+  font-size: 12px; }
+  @media screen and (min-width: 45em) {
+    /* line 84, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+    h6 {
+      font-size: 14px; } }
+
+/* line 87, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+li,
+dd {
+  color: #4A4A4A;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 21px;
+  list-style: none; }
+
+/* line 95, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+a {
+  color: #4A4A4A;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-weight: 600; }
+  /* line 102, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+  a:hover {
+    color: #15191C;
+    text-decoration: none; }
+  /* line 107, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+  a:active, a:focus {
+    outline: none; }
+
+/* line 113, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+strong, b {
+  font-weight: 600; }
+
+/* line 114, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/base/_typography.scss */
+i, em {
+  font-style: italic; }
+
+/* line 36, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+.button-small {
+  padding: 5px 6px;
+  padding: 0.35714rem 0.42857rem;
+  font-size: 14px;
+  font-size: 1rem; }
+
+/* line 41, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+.button-large {
+  padding: 15px 12px;
+  padding: 1.07143rem 0.85714rem; }
+
+/* line 54, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+.button-primary {
+  background-color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  color: #FFFFFF;
+  border-radius: 2px;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  margin: 5px 0 1px;
+  margin: 0.35714rem 0 0.07143rem;
+  padding: 12px 12px;
+  padding: 0.85714rem 0.85714rem;
+  font-size: 14px;
+  font-size: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 1px;
+  line-height: normal;
+  min-width: 180px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-appearance: none; }
+  /* line 19, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .button-primary text {
+    align: center;
+    decoration: none; }
+  /* line 25, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .button-primary:hover {
+    cursor: pointer; }
+  /* line 27, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .button-primary:focus {
+    border: none;
+    outline: none;
+    text-decoration: none; }
+  /* line 60, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .button-primary:hover {
+    background-color: #15191C;
+    border: 1px solid #15191C;
+    color: #FFFFFF;
+    opacity: 1; }
+  /* line 67, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .button-primary:active {
+    background-color: #15191C;
+    border: 1px solid #15191C;
+    color: #f2f2f2; }
+  /* line 73, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .button-primary:focus {
+    border: 1px solid #15191C; }
+
+/* line 77, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+.link-primary {
+  color: #4A4A4A;
+  border-bottom: 2px solid #4A4A4A;
+  display: inline-block;
+  font-size: 14px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+  margin-top: 1.07143rem;
+  padding-bottom: 3px;
+  padding-bottom: 0.21429rem;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+  /* line 89, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .link-primary:hover {
+    color: #4A4A4A;
+    opacity: 0.6; }
+
+/* line 54, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+.button-secondary {
+  background-color: #4A4A4A;
+  border: 1px solid #15191C;
+  color: #FFFFFF;
+  border-radius: 2px;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  margin: 5px 0 1px;
+  margin: 0.35714rem 0 0.07143rem;
+  padding: 12px 12px;
+  padding: 0.85714rem 0.85714rem;
+  font-size: 14px;
+  font-size: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 1px;
+  line-height: normal;
+  min-width: 180px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-appearance: none; }
+  /* line 19, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .button-secondary text {
+    align: center;
+    decoration: none; }
+  /* line 25, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .button-secondary:hover {
+    cursor: pointer; }
+  /* line 27, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .button-secondary:focus {
+    border: none;
+    outline: none;
+    text-decoration: none; }
+  /* line 60, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .button-secondary:hover {
+    background-color: #15191C;
+    border: 1px solid #15191C;
+    color: #FFFFFF;
+    opacity: 1; }
+  /* line 67, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .button-secondary:active {
+    background-color: #15191C;
+    border: 1px solid #15191C;
+    color: #f2f2f2; }
+  /* line 73, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .button-secondary:focus {
+    border: 1px solid #15191C; }
+
+/* line 77, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+.link-secondary {
+  color: #4A4A4A;
+  border-bottom: 2px solid #4A4A4A;
+  display: inline-block;
+  font-size: 14px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+  margin-top: 1.07143rem;
+  padding-bottom: 3px;
+  padding-bottom: 0.21429rem;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+  /* line 89, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .link-secondary:hover {
+    color: #4A4A4A;
+    opacity: 0.6; }
+
+@media screen and (min-width: 45em) {
+  /* line 98, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .scroll-on-page aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    /* line 89, /Users/analisabernardi/.asdf/installs/ruby/2.6.0/lib/ruby/gems/2.6.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .scroll-on-page aside:last-child {
+      margin-right: 0; } }
+/* line 104, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+.scroll-on-page .scroll-link {
+  display: block;
+  outline: none; }
+@media screen and (min-width: 45em) {
+  /* line 109, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_buttons.scss */
+  .scroll-on-page article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    /* line 89, /Users/analisabernardi/.asdf/installs/ruby/2.6.0/lib/ruby/gems/2.6.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    .scroll-on-page article:last-child {
+      margin-right: 0; } }
+
+/*-----------------------
+Navigation
+-----------------------*/
+/*-----------------------
+Labels
+-----------------------*/
+/* line 5, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_forms.scss */
+label {
+  margin: 20px 0 4px;
+  margin: 1.42857rem 0 0.28571rem;
+  font-size: 14px;
+  font-size: 1rem;
+  display: block; }
+
+/*-----------------------
+Inputs
+-----------------------*/
+/* line 14, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_forms.scss */
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  font-size: 14px;
+  font-size: 1rem;
+  border: 1px solid #DEDEDE;
+  border-radius: 1px;
+  box-sizing: border-box;
+  padding: 8px;
+  padding: 0.57143rem;
+  width: 100%;
+  -webkit-font-smoothing: antialiased; }
+  /* line 26, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/components/_forms.scss */
+  input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
+  select:focus,
+  textarea:focus {
+    -webkit-box-shadow: 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    border-color: #4A4A4A; }
+
+/* line 1, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/pages/_home.scss */
+[class*=-container] {
+  padding: 40px 20px;
+  padding: 2.85714rem 1.42857rem;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 45em) {
+    /* line 1, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/pages/_home.scss */
+    [class*=-container] {
+      padding: 80px 20px;
+      padding: 5.71429rem 1.42857rem; } }
+  /* line 20, /Users/analisabernardi/.asdf/installs/ruby/2.6.0/lib/ruby/gems/2.6.0/gems/bourbon-4.2.6/app/assets/stylesheets/addons/_clearfix.scss */
+  [class*=-container]::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 6, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/pages/_home.scss */
+main {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh; }
+
+/* line 25, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+body {
+  background-color: #F5FBF2; }
+
+/* line 29, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+nav {
+  display: inline-block;
+  vertical-align: left;
+  padding-top: 30px;
+  padding-left: 20px; }
+  @media screen and (min-width: 45em) {
+    /* line 29, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+    nav {
+      padding-left: 60px; } }
+  /* line 39, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  nav img {
+    width: 80px; }
+    @media screen and (min-width: 45em) {
+      /* line 39, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      nav img {
+        width: 115px; } }
+
+/* line 48, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+.hero {
+  margin-bottom: 100px;
+  margin-top: 80px;
+  position: relative;
+  z-index: 1; }
+  @media screen and (min-width: 45em) {
+    /* line 48, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+    .hero {
+      margin-top: 120px; } }
+  /* line 58, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  .hero .text-block {
+    display: block;
+    padding-left: 20px;
+    margin-top: 30px;
+    width: 95%;
+    z-index: 1 !important; }
+    @media screen and (min-width: 45em) {
+      /* line 58, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      .hero .text-block {
+        width: 80%;
+        padding-left: 60px; } }
+    @media screen and (min-width: 75em) {
+      /* line 58, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      .hero .text-block {
+        width: 75%; } }
+  /* line 75, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  .hero h2 {
+    width: 80%; }
+    @media screen and (min-width: 45em) {
+      /* line 75, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      .hero h2 {
+        width: 100%; } }
+  /* line 83, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  .hero .line {
+    width: 150px;
+    border-bottom: 5px solid #3A703A;
+    position: absolute;
+    border-radius: 100px;
+    border-top: 1px solid #3A703A; }
+    @media screen and (min-width: 45em) {
+      /* line 83, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      .hero .line {
+        border-bottom: 7px solid #3A703A;
+        border-top: 1px solid #3A703A;
+        width: 200px; } }
+  /* line 97, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  .hero #mc_embed_signup {
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    max-width: 600px;
+    width: 100%;
+    justify-content: center;
+    z-index: 1 !important; }
+  /* line 108, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  .hero #mce-EMAIL:active,
+  .hero #mce-EMAIL:hover,
+  .hero #mce-EMAIL:focus {
+    border-color: #3A703A;
+    outline: transparent dotted 1px; }
+  /* line 115, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  .hero #mce-EMAIL {
+    float: left;
+    border-color: #5FBC51;
+    padding: 16px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #4A4A4A;
+    border-radius: 100px;
+    width: 100%;
+    font-family: "Montserrat", sans-serif; }
+    @media screen and (min-width: 45em) {
+      /* line 115, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      .hero #mce-EMAIL {
+        padding: 16px 200px 16px 16px; } }
+  /* line 132, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  .hero #mc-embedded-subscribe:active,
+  .hero #mc-embedded-subscribe:hover,
+  .hero #mc-embedded-subscribe:focus {
+    background-color: #3A703A;
+    border-color: #3A703A;
+    outline: transparent dotted 1px; }
+  /* line 140, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  .hero #mc-embedded-subscribe {
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #5FBC51;
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 100px;
+    border: none;
+    font-family: "Montserrat", sans-serif; }
+    @media screen and (min-width: 45em) {
+      /* line 140, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      .hero #mc-embedded-subscribe {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        float: right;
+        width: auto;
+        margin-top: 0;
+        padding: 12px 60px; } }
+
+/* line 166, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+.left-play {
+  position: absolute;
+  left: -35%;
+  bottom: -25%;
+  width: 304.8px;
+  height: 343.8px; }
+  @media screen and (min-width: 45em) {
+    /* line 166, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+    .left-play {
+      width: 508px;
+      height: 573px;
+      left: -10%;
+      bottom: -40%; } }
+
+/* line 181, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+.right-play {
+  position: absolute;
+  right: -50%;
+  top: 2%;
+  width: 388.97px;
+  height: 438.675px; }
+  @media screen and (min-width: 45em) {
+    /* line 181, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+    .right-play {
+      position: absolute;
+      width: 777.94px;
+      height: 877.35px;
+      right: -10%;
+      top: 10%; } }
+  @media screen and (min-width: 75em) {
+    /* line 181, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+    .right-play {
+      position: absolute;
+      width: 777.94px;
+      height: 877.35px;
+      right: -10%;
+      top: 10%; } }
+
+/* line 205, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+footer {
+  position: absolute;
+  bottom: 100px;
+  right: 0; }
+  @media screen and (min-width: 45em) {
+    /* line 205, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+    footer {
+      bottom: 150px;
+      right: 0; } }
+  /* line 215, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  footer:before {
+    content: "";
+    height: 0;
+    width: 0;
+    border-bottom: 100px solid white;
+    border-left: 1100px solid transparent; }
+    @media screen and (min-width: 45em) {
+      /* line 215, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      footer:before {
+        content: "";
+        height: 0;
+        width: 0;
+        border-bottom: 150px solid white;
+        border-left: 1100px solid transparent; } }
+  /* line 225, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  footer .footer-inner {
+    position: absolute;
+    bottom: -80px;
+    right: 30px; }
+    @media screen and (min-width: 45em) {
+      /* line 225, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      footer .footer-inner {
+        bottom: -120px; } }
+    /* line 234, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+    footer .footer-inner img {
+      width: 40px;
+      padding: 3px; }
+      @media screen and (min-width: 45em) {
+        /* line 234, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+        footer .footer-inner img {
+          width: 50px; } }
