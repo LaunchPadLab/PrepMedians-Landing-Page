@@ -24,11 +24,6 @@
 
 body {
 	background-color: $green-lightest;
-	
-	@include media($tablet){
-		max-height: 100vh;
-		overflow: hidden;
-	}
 }
 
 nav {
@@ -51,8 +46,14 @@ nav {
 }
 
 .hero {
-	@include vertical-center;
+	margin-bottom: 100px;
+	margin-top: 80px;
+	position: relative;
 	z-index: 1;
+
+	@include media($tablet) {
+		margin-top: 100px;
+	}
 
 	.text-block {
 		display: block;
@@ -72,7 +73,7 @@ nav {
 	}
 
 	.line {
-		width: 200px;
+		width: 150px;
 		border-bottom: 5px solid $green-dark;
 	    position: absolute;
 	    border-radius: 100px;
@@ -81,26 +82,19 @@ nav {
 	    @include media($tablet) {
 	    	border-bottom: 7px solid $green-dark;
 	    	border-top: 1px solid $green-dark;
+	    	width: 200px;
 	    }
 	}
 
-	.form {
+	#mc_embed_signup {
 		display: inline-block;
-		padding-top: 10px;
-		padding-left: 20px;
-		width: 95%;
+		position: relative;
+		margin-top: 10px;
+		margin-bottom: 60px;
+		max-width: 600px;
+		width: 100%;
 		justify-content: center;
 		z-index: 1 !important;
-
-		@include media($tablet) {
-			padding-top: 30px;
-			width:80%;
-			padding-left: 60px;
-		}
-
-		@include media($desktop) {
-			width:75%;
-		}
 	}
 
 	#mce-EMAIL:active,
@@ -123,7 +117,7 @@ nav {
 		font-family: $primary-sans-serif;
 
 		@include media($tablet) {
-			width: 70%;
+			padding: 16px 200px 16px 16px;
 		}
 	}
 
@@ -136,16 +130,27 @@ nav {
 	}
 
 	#mc-embedded-subscribe {
-		float: right;
 		color: white;
+		margin-top: 10px;
+		width: 100%;
 		background-color: $green-base;
-		padding: 12px 60px;
+		padding: 16px 60px;
 		text-transform: uppercase;
 		font-weight: $regular;
 		font-size: $s-medium;
 		border-radius: 100px;
-		border-color: $green-base;
+		border: none;
 		font-family: $primary-sans-serif;
+
+		@include media($tablet) {
+			position: absolute;
+			top: 5px;
+			right: 5px; 
+			float: right;
+			width: auto;
+			margin-top: 0;
+			padding: 12px 60px;
+		}
 
 	}
 }

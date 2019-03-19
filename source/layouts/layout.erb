@@ -23,9 +23,11 @@
   </script>
 
   <body class="<%= page_classes %>">
+    <main>
     <%= partial 'partials/navigation' %>
     <%= yield %>
     <%= partial 'partials/footer' %>
+    </main>
     <%= javascript_include_tag  "all" %>
   </body>
 </html>
