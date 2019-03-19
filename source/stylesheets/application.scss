@@ -52,7 +52,7 @@ nav {
 	z-index: 1;
 
 	@include media($tablet) {
-		margin-top: 100px;
+		margin-top: 120px;
 	}
 
 	.text-block {
@@ -69,6 +69,14 @@ nav {
 
 		@include media($desktop) {
 			width:75%;
+		}
+	}
+
+	h2 {
+		width: 80%;
+
+		@include media($tablet) {
+			width: 100%;
 		}
 	}
 
@@ -89,7 +97,7 @@ nav {
 	#mc_embed_signup {
 		display: inline-block;
 		position: relative;
-		margin-top: 10px;
+		margin-top: 20px;
 		margin-bottom: 60px;
 		max-width: 600px;
 		width: 100%;
@@ -224,11 +232,11 @@ footer {
 		}
 
 		img {
-			width: 38px;
-			padding: 2px;
+			width: 40px;
+			padding: 3px;
 
 			@include media($tablet) {
-				width: 60px;
+				width: 50px;
 			}
 		}
 	}
