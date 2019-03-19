@@ -9,12 +9,25 @@
     <title><%= current_page.data.title || "The Middleman" %></title>
     <%= favicon_tag 'images/favicon.png' %>
     <%= stylesheet_link_tag "application" %>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,800" rel="stylesheet">
   </head>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135934489-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-135934489-1');
+  </script>
+
   <body class="<%= page_classes %>">
+    <main>
     <%= partial 'partials/navigation' %>
     <%= yield %>
     <%= partial 'partials/footer' %>
+    </main>
     <%= javascript_include_tag  "all" %>
   </body>
 </html>

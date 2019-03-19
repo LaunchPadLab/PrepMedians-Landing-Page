@@ -20,3 +20,224 @@
 
 // Page Styles
 @import "pages/home";
+
+
+body {
+	background-color: $green-lightest;
+}
+
+nav {
+	display: inline-block;
+	vertical-align: left;
+	padding-top: 30px;
+	padding-left: 20px;
+
+	@include media($tablet) {
+		padding-left: 60px;
+	}
+	
+	img {
+		width: 80px;
+
+		@include media($tablet) {
+			width: 115px;
+		}
+	}
+}
+
+.hero {
+	margin-bottom: 100px;
+	margin-top: 80px;
+	position: relative;
+	z-index: 1;
+
+	@include media($tablet) {
+		margin-top: 120px;
+	}
+
+	.text-block {
+		display: block;
+		padding-left: 20px;
+		margin-top: 30px;
+		width: 95%;
+		z-index: 1 !important;
+
+		@include media($tablet) {
+			width:80%;
+			padding-left: 60px;
+		}
+
+		@include media($desktop) {
+			width:75%;
+		}
+	}
+
+	h2 {
+		width: 80%;
+
+		@include media($tablet) {
+			width: 100%;
+		}
+	}
+
+	.line {
+		width: 150px;
+		border-bottom: 5px solid $green-dark;
+	    position: absolute;
+	    border-radius: 100px;
+	    border-top: 1px solid $green-dark;
+
+	    @include media($tablet) {
+	    	border-bottom: 7px solid $green-dark;
+	    	border-top: 1px solid $green-dark;
+	    	width: 200px;
+	    }
+	}
+
+	#mc_embed_signup {
+		display: inline-block;
+		position: relative;
+		margin-top: 20px;
+		margin-bottom: 60px;
+		max-width: 600px;
+		width: 100%;
+		justify-content: center;
+		z-index: 1 !important;
+	}
+
+	#mce-EMAIL:active,
+	#mce-EMAIL:hover,
+	#mce-EMAIL:focus  {
+		border-color: $green-dark;
+		outline: transparent dotted 1px;
+	}
+
+	#mce-EMAIL {
+		float: left;
+		border-color: $green-base;
+		padding: 16px;
+		font-style: normal;
+		font-weight: $light;
+		font-size: $s-medium;
+		color: $black-base;
+		border-radius: 100px;
+		width: 100%;
+		font-family: $primary-sans-serif;
+
+		@include media($tablet) {
+			padding: 16px 200px 16px 16px;
+		}
+	}
+
+	#mc-embedded-subscribe:active,
+	#mc-embedded-subscribe:hover,
+	#mc-embedded-subscribe:focus {
+		background-color: $green-dark;
+		border-color: $green-dark;
+		outline: transparent dotted 1px;
+	}
+
+	#mc-embedded-subscribe {
+		color: white;
+		margin-top: 10px;
+		width: 100%;
+		background-color: $green-base;
+		padding: 16px 60px;
+		text-transform: uppercase;
+		font-weight: $regular;
+		font-size: $s-medium;
+		border-radius: 100px;
+		border: none;
+		font-family: $primary-sans-serif;
+
+		@include media($tablet) {
+			position: absolute;
+			top: 5px;
+			right: 5px; 
+			float: right;
+			width: auto;
+			margin-top: 0;
+			padding: 12px 60px;
+		}
+
+	}
+}
+
+.left-play {
+	position: absolute;
+	left: -35%;
+	bottom: -25%;
+	width: 304.8px;
+	height: 343.8px;
+
+	@include media($tablet) {
+		width: 508px;
+		height: 573px;
+		left: -10%;
+		bottom: -40%;
+	}	
+}
+
+.right-play {
+	position: absolute;
+	right: -50%;
+	top: 2%;
+	width: 388.97px;
+	height: 438.675px;
+
+	@include media($tablet) {
+		position: absolute;
+		width: 777.94px;
+		height: 877.35px;
+		right: -10%;
+		top: 10%
+	}	
+
+	@include media($desktop) {
+		position: absolute;
+		width: 777.94px;
+		height: 877.35px;
+		right: -10%;
+		top: 10%
+	}	
+}
+
+footer {
+	position: absolute;
+	bottom: 100px;
+	right: 0;
+
+	@include media($tablet) {
+		bottom: 150px;
+		right: 0;
+	}
+
+	&:before {
+		content: "";
+		@include triangle(1100px 100px, white transparent, down-right);
+
+		@include media($tablet) {
+			content: "";
+			@include triangle(1100px 150px, white transparent, down-right);
+		}
+	}
+
+	.footer-inner{
+		position: absolute;
+		bottom: -80px;
+		right: 30px;
+
+		@include media($tablet) {
+			bottom: -120px;
+		}
+
+		img {
+			width: 40px;
+			padding: 3px;
+
+			@include media($tablet) {
+				width: 50px;
+			}
+		}
+	}
+}
