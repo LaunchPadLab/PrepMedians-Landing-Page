@@ -515,6 +515,13 @@ nav {
       .hero h2 {
         width: 100%; } }
   /* line 83, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  .hero p {
+    width: 95%; }
+    @media screen and (min-width: 45em) {
+      /* line 83, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      .hero p {
+        width: 80%; } }
+  /* line 91, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
   .hero .line {
     width: 150px;
     border-bottom: 5px solid #3A703A;
@@ -522,12 +529,12 @@ nav {
     border-radius: 100px;
     border-top: 1px solid #3A703A; }
     @media screen and (min-width: 45em) {
-      /* line 83, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      /* line 91, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
       .hero .line {
         border-bottom: 7px solid #3A703A;
         border-top: 1px solid #3A703A;
         width: 200px; } }
-  /* line 97, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  /* line 105, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
   .hero #mc_embed_signup {
     display: inline-block;
     position: relative;
@@ -537,13 +544,13 @@ nav {
     width: 100%;
     justify-content: center;
     z-index: 1 !important; }
-  /* line 108, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  /* line 116, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
   .hero #mce-EMAIL:active,
   .hero #mce-EMAIL:hover,
   .hero #mce-EMAIL:focus {
     border-color: #3A703A;
     outline: transparent dotted 1px; }
-  /* line 115, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  /* line 123, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
   .hero #mce-EMAIL {
     float: left;
     border-color: #5FBC51;
@@ -556,17 +563,17 @@ nav {
     width: 100%;
     font-family: "Montserrat", sans-serif; }
     @media screen and (min-width: 45em) {
-      /* line 115, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      /* line 123, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
       .hero #mce-EMAIL {
         padding: 16px 200px 16px 16px; } }
-  /* line 132, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  /* line 140, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
   .hero #mc-embedded-subscribe:active,
   .hero #mc-embedded-subscribe:hover,
   .hero #mc-embedded-subscribe:focus {
     background-color: #3A703A;
     border-color: #3A703A;
     outline: transparent dotted 1px; }
-  /* line 140, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  /* line 148, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
   .hero #mc-embedded-subscribe {
     color: white;
     margin-top: 10px;
@@ -580,7 +587,7 @@ nav {
     border: none;
     font-family: "Montserrat", sans-serif; }
     @media screen and (min-width: 45em) {
-      /* line 140, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      /* line 148, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
       .hero #mc-embedded-subscribe {
         position: absolute;
         top: 5px;
@@ -590,7 +597,7 @@ nav {
         margin-top: 0;
         padding: 12px 60px; } }
 
-/* line 166, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+/* line 174, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
 .left-play {
   position: absolute;
   left: -35%;
@@ -598,14 +605,14 @@ nav {
   width: 304.8px;
   height: 343.8px; }
   @media screen and (min-width: 45em) {
-    /* line 166, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+    /* line 174, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
     .left-play {
       width: 508px;
       height: 573px;
       left: -10%;
       bottom: -40%; } }
 
-/* line 181, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+/* line 189, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
 .right-play {
   position: absolute;
   right: -50%;
@@ -613,7 +620,7 @@ nav {
   width: 388.97px;
   height: 438.675px; }
   @media screen and (min-width: 45em) {
-    /* line 181, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+    /* line 189, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
     .right-play {
       position: absolute;
       width: 777.94px;
@@ -621,7 +628,7 @@ nav {
       right: -10%;
       top: 10%; } }
   @media screen and (min-width: 75em) {
-    /* line 181, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+    /* line 189, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
     .right-play {
       position: absolute;
       width: 777.94px;
@@ -629,17 +636,17 @@ nav {
       right: -10%;
       top: 10%; } }
 
-/* line 205, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+/* line 213, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
 footer {
   position: absolute;
   bottom: 100px;
   right: 0; }
   @media screen and (min-width: 45em) {
-    /* line 205, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+    /* line 213, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
     footer {
       bottom: 150px;
       right: 0; } }
-  /* line 215, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  /* line 223, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
   footer:before {
     content: "";
     height: 0;
@@ -647,27 +654,27 @@ footer {
     border-bottom: 100px solid white;
     border-left: 1100px solid transparent; }
     @media screen and (min-width: 45em) {
-      /* line 215, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      /* line 223, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
       footer:before {
         content: "";
         height: 0;
         width: 0;
         border-bottom: 150px solid white;
         border-left: 1100px solid transparent; } }
-  /* line 225, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+  /* line 233, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
   footer .footer-inner {
     position: absolute;
     bottom: -80px;
     right: 30px; }
     @media screen and (min-width: 45em) {
-      /* line 225, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+      /* line 233, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
       footer .footer-inner {
         bottom: -120px; } }
-    /* line 234, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+    /* line 242, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
     footer .footer-inner img {
       width: 40px;
       padding: 3px; }
       @media screen and (min-width: 45em) {
-        /* line 234, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
+        /* line 242, /Users/analisabernardi/Projects/prepmedians-marketing/source/stylesheets/application.scss */
         footer .footer-inner img {
           width: 50px; } }
