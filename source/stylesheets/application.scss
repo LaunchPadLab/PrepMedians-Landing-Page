@@ -80,6 +80,14 @@ nav {
 		}
 	}
 
+	p {
+		width: 95%;
+
+		@include media($tablet) {
+			width: 80%;
+		}
+	}
+
 	.line {
 		width: 150px;
 		border-bottom: 5px solid $green-dark;
