@@ -1,3 +1,20 @@
-/*-----------------------
-Footer
------------------------*/
+footer {
+	.footer-inner{
+		position: absolute;
+		@include rem(bottom, -80px);
+		@include rem(right, 30px);
+
+		@include media($tablet) {
+			@include rem(bottom, -120px);
+		}
+
+		img {
+			@include rem(width, 40px);
+			@include rem(padding, 3px);
+
+			@include media($tablet) {
+				@include rem(width, 50px);
+			}
+		}
+	}
+}

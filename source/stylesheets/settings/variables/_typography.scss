@@ -7,20 +7,24 @@
 
 
   // Sizes
-  $font-size-base: 14px;
+ $font-size-base: 14px;
 
   $s-giga:    160px;
   $s-mega:    38px;
 
   $s-huge:    66px;
-  $s-large:   36px;
+  $s-hugeish: 45px;
+  $s-larger:  40px;
+  $s-large:   30px;
   $s-largish: 24px;
   $s-bigger:  20px;
   $s-big:     18px;
   $s-medium:  16px;
   $s-base: $font-size-base;
   $s-small:   14px;
-  $s-tiny:    10px;
+  $s-tiny:    12px;
+  $s-mini:    8px;
+
 
   // Line Heights
   $base-line-height: $font-size-base * 1.5;

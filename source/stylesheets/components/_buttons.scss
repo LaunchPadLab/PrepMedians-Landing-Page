@@ -112,3 +112,66 @@
     }
   }
 }
+
+.button-green {
+  background-color: $green-base;
+  border: none;
+  @include rem(border-radius, 100px);
+  color: white;
+  display: inline-block;
+  @include rem(font-size, 12px);
+  font-family: Montserrat;
+  font-weight: $bold;
+  @include rem(margin-top, 5px);
+  @include rem(margin-bottom, 20px);
+  @include rem(padding, 16px 40px);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+    @include media($tablet) {
+      @include rem(margin-top, 20px);
+    }
+
+  sup {
+    font-size: $s-mini;
+    vertical-align: super;
+  }
+
+  &:hover {
+    background-color: $green-dark;
+    color: white;
+  }
+}
+
+.button-darkgreen {
+  background-color: $green-dark;
+  border: none;
+  @include rem(border-radius, 100px);
+  color: white;
+  display: inline-block;
+  @include rem(font-size, 12px);
+  font-family: Montserrat;
+  font-weight: $bold;
+  @include rem(margin-top, 5px);
+  @include rem(margin-bottom, 20px);
+  @include rem(padding, 16px 40px);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+    @include media($tablet) {
+      @include rem(margin-left, 20px);
+      @include rem(margin-top, 20px);
+    }
+
+  sup {
+    font-size: $s-mini;
+    vertical-align: super;
+  }
+
+  &:hover {
+    background-color: $green-base;
+    color: white;
+  }
+}

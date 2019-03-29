@@ -1,0 +1,51 @@
+.left-play {
+	bottom: -25%;
+	@include rem(height, 343.8px);
+	left: -35%;
+	position: absolute;
+	@include rem(width, 304.8px);
+	
+
+	@include media($tablet) {
+		bottom: -40%;
+		@include rem(height, 573px);
+		left: -10%;
+		@include rem(width, 508px);
+	}	
+}
+
+.right-play {
+	@include rem(height, 438.675px);
+	position: absolute;
+	right: -50%;
+	top: 2%;
+	@include rem(width, 388.97px);
+
+	@include media($tablet) {
+		@include rem(height, 877.35px);
+		position: absolute;
+		right: -10%;
+		top: 10%;
+		@include rem(width, 777.94px);
+	}	
+
+	@include media($desktop) {
+		@include rem(height, 877.35px);
+		position: absolute;
+		right: -10%;
+		top: 10%;
+		@include rem(width, 777.94px);
+	}	
+}
+
+.line {
+	@include rem(border-bottom, 4px solid $green-base);
+	@include rem(border-radius, 100px);
+	@include rem(border-top, 1px solid $green-base);
+	@include rem(margin-bottom, 0);
+	@include rem(width, 70px);
+	
+	@include media($tablet) {
+	    @include rem(border-bottom, 5px solid $green-base);
+	}
+}

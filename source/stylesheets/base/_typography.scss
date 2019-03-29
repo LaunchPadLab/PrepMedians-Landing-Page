@@ -18,7 +18,7 @@ body {
 
 h1 {
   font-style: normal;
-  font-weight: $heavy;
+  font-weight: $bold;
   font-size: $s-large;
   color: $black-base;
   line-height: 1.3em;
@@ -46,42 +46,69 @@ h2 {
 }
 
 p {
-  font-weight: 300;
-  font-style: normal;
-  font-size: $s-small;
   color: $black-base;
+  font-size: $s-small;
+  font-style: normal;
+  font-weight: 300;
   line-height: 1.5em;
-  padding-top: 20px;
-  padding-bottom: 15px;
 
   @include media($tablet) {
     font-size: $s-big;
-    padding-bottom: 30px;
-    padding-top: 20px;
+  }
+
+  sup {
+    font-size: $s-tiny;
+    vertical-align: super;
   }
 }
 
-
-
-h3,
-h4,
-h5,
-h6 {
-  font-style: normal;
-  font-weight: $heavy;
-  @include font-type($primary-sans-serif, normal, $regular);
-  @include rem(margin-bottom, 12px);
+h3 {
   color: $black-base;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.1;
+  font-style: normal;
+  font-weight: $bold;
+  line-height: 1.3em;
+  @include rem(margin-bottom, 15px);
+
+  @include media($tablet) {
+    font-size: $s-larger;
+  }
+
+  sup {
+    font-size: $s-bigger;
+    vertical-align: super;
+  }
 }
 
+h4 {
+  color: $black-base;
+  font-size: $s-tiny;
+  font-style: normal;
+  font-weight: $light;
+  line-height: 1.3em;
+  margin: 0 auto;
 
-h3 { font-size: $font-size-base * 1.45; @include media($tablet){ font-size: $font-size-base * 2.50; } }
-h4 { font-size: $font-size-base * 1.25; @include media($tablet){ font-size: $font-size-base * 1.75; } }
-h5 { font-size: $font-size-base * 1.00; @include media($tablet){ font-size: $font-size-base * 1.25; } }
-h6 { font-size: $font-size-base - 2.00; @include media($tablet){ font-size: $font-size-base * 1.00; } }
+  @include media($tablet) {
+    font-size: $s-small;
+  }
+}
+
+h5 {
+  color: $black-base;
+  font-size: $s-big;
+  font-style: normal;
+  font-weight: $bold;
+  line-height: 1.3em;
+  @include rem(margin-bottom, 15px);
+
+  @include media($tablet) {
+    font-size: $s-bigger;
+  }
+
+  sup {
+    font-size: $s-small;
+    vertical-align: super;
+  }
+}
 
 
 li,
