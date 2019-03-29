@@ -128,8 +128,8 @@ body {
 	}
 
 	.pricing-container {
-    	margin:  30px auto;
-    	width: 1000px;
+    	width: 100%;
+    	@include rem(padding, 70px 0);
     	@include rem(margin, 0 auto);
 	}
 
@@ -138,7 +138,13 @@ body {
 		@include rem(border-radius, 5px); 
 		border: none;
 	    width: 33%;
-	    @include rem(padding, 20px 10px); 
+	    height: 100%;
+	    @include rem(padding, 20px); 
+
+	    p {
+	    	text-align: left;
+	    	@include rem(padding-top, 20px); 
+	    }
 	}
 
 	.col1 {
@@ -167,6 +173,37 @@ body {
 	}
 }
 
+.founder {
+	background-color: white;
+	display: inline-block;
+	@include rem(margin, 0 auto);
+	position: relative;
+	width: 100%;
+	z-index: 1;
+
+	.founder-content {
+		width: 95%;
+
+		.text-block-left {
+			display: block;
+			@include rem(margin-bottom, 130px);
+			@include rem(margin-top, 100px);
+			z-index: 1 !important;
+			width: 30%;
+			float: left;
+
+			h4, h3 {
+				text-align: left;
+			}
+		}
+
+		.text-block-right {
+			display: block;
+			width: 60%;
+			float: right;
+		}
+	}
+}
 
 
 
