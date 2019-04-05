@@ -14,7 +14,7 @@
 
   $s-huge:    66px;
   $s-hugeish: 45px;
-  $s-larger:  40px;
+  $s-larger:  36px;
   $s-large:   30px;
   $s-largish: 24px;
   $s-bigger:  20px;
@@ -23,8 +23,9 @@
   $s-base: $font-size-base;
   $s-small:   14px;
   $s-tiny:    12px;
-  $s-mini:    8px;
-
+  $s-tiniest:  8px;
+  $s-baby:     6px;
+  $s-invisible:2px;
 
   // Line Heights
   $base-line-height: $font-size-base * 1.5;

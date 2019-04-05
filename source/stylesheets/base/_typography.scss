@@ -57,7 +57,7 @@ p {
   }
 
   sup {
-    font-size: $s-tiny;
+    font-size: $s-tiniest;
     vertical-align: super;
   }
 }
@@ -94,14 +94,14 @@ h4 {
 
 h5 {
   color: $black-base;
-  font-size: $s-big;
+  font-size: $s-medium;
   font-style: normal;
   font-weight: $bold;
   line-height: 1.3em;
   @include rem(margin-bottom, 15px);
 
   @include media($tablet) {
-    font-size: $s-bigger;
+    font-size: $s-big;
   }
 
   sup {

@@ -115,61 +115,58 @@ body {
 	background-color: $green-lightest;
 	display: inline-block;
 	@include rem(margin, 0 auto);
-	position: relative;
 	text-align: center;
 	width: 100%;
 	z-index: 1;
 
 	.text-block-centered {
-		display: block;
-		@include rem(margin-bottom, 130px);
-		@include rem(margin-top, 100px);
+		display: inline-block;
 		z-index: 1 !important;
+		@include rem(padding, 20px);
+
+		@include media($desktop) {
+			@include rem(padding, 80px);
+		}
 	}
 
-	.pricing-container {
-    	width: 100%;
-    	@include rem(padding, 70px 0);
-    	@include rem(margin, 0 auto);
-	}
+	.container {
+		text-align: center;
+		@include rem(padding-top, 30px);
 
-	.all-columns {
-		background-color: white;
-		@include rem(border-radius, 5px); 
-		border: none;
-	    width: 33%;
-	    height: 100%;
-	    @include rem(padding, 20px); 
+		p {
+			text-align: left;
+			@include rem(margin-top, 15px);
+		}
 
-	    p {
-	    	text-align: left;
-	    	@include rem(padding-top, 20px); 
-	    }
-	}
+		.all-boxes {
+			background-color: white;
+			border: none;
+			@include rem(border-radius, 5px);
+			@include rem(box-shadow, 0px 1px 15px 5px rgba(0,0,0,0.05));
+			@include rem(padding-bottom, 30px);
+			@include rem(padding, 30px 20px);
+			@include rem(margin-bottom, 30px);
+			width: 100%;
 
-	.col1 {
-	    float: left;
+			@include media($desktop) {
+				@include span-columns(4 of 12);
+				@include rem(height, 600px);
+				@include rem(margin-bottom, 0);
+			}
 
-	    h5 {
-	    	@include rem(margin, 0 auto);
-	    	width: 90%;
-	    }
-	}
-	.col2 {
-	    float: right;
+			.expandable {
+				display: block;
+				text-align: left;
 
-	   	h5 {
-	   		@include rem(margin, 0 auto);
-	    	width: 90%;
-	    }
-	}
-	.col3 {
-	    margin: auto;
-
-	    h5 {
-	    	@include rem(margin, 0 auto);
-	    	width: 90%;
-	    }
+				.icon {
+					display: inline-block;
+					@include rem(margin-left, 10px);
+					@include rem(width, 40px);
+				    color: $green-base;
+				    cursor: pointer;
+				}
+			}
+		}
 	}
 }
 
@@ -182,25 +179,84 @@ body {
 	z-index: 1;
 
 	.founder-content {
-		width: 95%;
+		display: inline-block;
+		@include rem(padding, 20px);
+		width: 100%;
+
+		@include media($tablet) {
+			@include rem(padding, 60px);
+		}
+
+		@include media($desktop) {
+			@include rem(padding, 80px);
+		}
 
 		.text-block-left {
-			display: block;
-			@include rem(margin-bottom, 130px);
-			@include rem(margin-top, 100px);
-			z-index: 1 !important;
-			width: 30%;
-			float: left;
+			@include rem(margin, 0 auto);
+			width: 100%;
+			text-align: center;
 
-			h4, h3 {
+			@include media($desktop) {
 				text-align: left;
+				display: inline-block;
+				width: 20%;
+				margin-right: 10%;
+			}
+
+			.line {
+				@include media($desktop) {
+					margin-left: 0; 
+				}
 			}
 		}
 
 		.text-block-right {
-			display: block;
-			width: 60%;
-			float: right;
+			width: 100%;
+			
+			@include media($desktop) {
+				display: inline-block;
+				float: right;
+				width: 70%;
+				@include rem(margin-top, 0px);
+			}
+
+			p {
+				@include rem(margin-top, 20px);
+
+				@include media($desktop) {
+					@include rem(margin-top, 0);
+				}
+			}
+
+			.kalyan {
+				display: inline-block;
+				@include rem(margin-top, 20px);
+				width: 100%;
+				text-align: center;
+
+				@include media($desktop) { 
+					text-align: left;
+				}
+
+				h5 {
+					padding-top: 15px;
+				}
+
+				img {
+					@include rem(width, 25px);
+					@include rem(margin, 0 auto);
+
+					@include media($tablet) { 
+						@include rem(width, 50px);
+					}
+
+					@include media($desktop) {
+						float: left;
+						@include rem(margin-right, 20px);
+					}
+				}
+			}
+			
 		}
 	}
 }

@@ -42,7 +42,7 @@
 	@include rem(border-bottom, 4px solid $green-base);
 	@include rem(border-radius, 100px);
 	@include rem(border-top, 1px solid $green-base);
-	@include rem(margin-bottom, 0);
+	@include rem(margin, 0 auto);
 	@include rem(width, 70px);
 	
 	@include media($tablet) {
